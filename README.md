@@ -15,4 +15,4 @@
 ## Experimental Results
 
 **Results of the average PSNR (dB) and SSIM for the testset**
-<img src = "/figures/PSNR.PNG" width="900">
+<img src = "/Figures/PSNR.png" width="900">
