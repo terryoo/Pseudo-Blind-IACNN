@@ -10,7 +10,7 @@ This paper presents methods based on convolutional neural networks (CNNs) for re
 # Test Code
 The code is implemented with caffe + matlab
 
-Trained download: [[link]](http://ispl.synology.me:8480/sharing/csGfNlzmu)
+Trained model download: [[link]](http://ispl.synology.me:8480/sharing/csGfNlzmu)
 # Network Architecture
 <img src = "/Figures/network1.png" width="900">
 The process of the pseudo-blind compression artifact removal scheme. The consecutive frames from the input video are used for the QP estimation, and the network trained with a similar QP is applied to the whole frame. That is, the artifact removal is not performed patch by patch for efficiency.
@@ -35,6 +35,7 @@ The process of the pseudo-blind compression artifact removal scheme. The consecu
 ## Dynamic Compression
 <img src = "/Figures/fig15.PNG" width="800">
 The GT and results of QP estimation where sequences are synthetically generated from ReadySteadyGo.
+
 <img src = "/Figures/fig16.PNG" width="600">
 The sequence of PSNR before/after applying our IACNN-E, and the actual QP and estimated QP.
 
