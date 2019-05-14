@@ -10,10 +10,11 @@ This paper presents methods based on convolutional neural networks (CNNs) for re
 # Test Code
 The code is implemented with caffe + matlab
 
+Trained download: [[link]](http://ispl.synology.me:8480/sharing/csGfNlzmu)
 # Network Architecture
 
 
-Trained download: [[link]](http://ispl.synology.me:8480/sharing/csGfNlzmu)
+
 ## Video Comparison
   * Video Comparison: [Youtube Link] (Re-compressed by Youtube)
   * Video YUV Download: [Link] (900M)
