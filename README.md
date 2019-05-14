@@ -1,6 +1,6 @@
 
 
-# A Pseudo-Blind Convolutional Neural Network for the Removal of Artifacts in Compressed Image and Video
+# A Pseudo-Blind Convolutional Neural Network for the Removal of Artifacts in Compressed Image and Video (CSVT 2019)
 <img src = "/Figures/caps_ARCNN.bmp" width="430"> <img src = "/Figures/caps_IACNNE.bmp" width="430"> 
 
 Conventional method (ARCNN) / Proposed
@@ -13,7 +13,7 @@ The code is implemented with caffe + matlab
 Trained download: [[link]](http://ispl.synology.me:8480/sharing/csGfNlzmu)
 # Network Architecture
 <img src = "/Figures/network1.png" width="900">
-<img src = "/Figures/network2.png" width="500"> <img src = "/Figures/network3.png" width="300">
+The process of the pseudo-blind compression artifact removal scheme. The consecutive frames from the input video are used for the QP estimation, and the network trained with a similar QP is applied to the whole frame. That is, the artifact removal is not performed patch by patch for efficiency.
 
 
 ## Video Comparison
@@ -27,6 +27,7 @@ Trained download: [[link]](http://ispl.synology.me:8480/sharing/csGfNlzmu)
 # Experimental Results
 **Results of the average PSNR (dB) and SSIM for the testset**
 <img src = "/Tables/PSNR.PNG" width="900">
+
 
 **JPEG Detail Results
 **MPEG Detail Results
@@ -43,3 +44,14 @@ Trained download: [[link]](http://ispl.synology.me:8480/sharing/csGfNlzmu)
 #### [VRCNN] A Convolutional Neural Network Approach for Post-Processing in HEVC Intra Coding <paper-button> <a href="https://arxiv.org/pdf/1608.06690.pdf"> Link</a> </paper-button>
 ### CNN-based HEVC In-loop filter
 #### [IFCNN] CNN-based in-loop filtering for coding efficiency improvement <paper-button> <a href="http://ieeexplore.ieee.org/document/7528223/"> Link</a> </paper-button>
+
+# Citation
+```
+@article{kim2019pseudo,
+  title={A Pseudo-Blind Convolutional Neural Network for the Reduction of Compression Artifacts},
+  author={Kim, Yoonsik and Soh, Jae Woong and Park, Jaewoo and Ahn, Byeongyong and Lee, Hyun-Seung and Moon, Young-Su and Cho, Nam Ik},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  year={2019},
+  publisher={IEEE}
+}
+```
