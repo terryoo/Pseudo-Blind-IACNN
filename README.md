@@ -12,9 +12,9 @@ The code is implemented with caffe + matlab
 
 Trained download: [[link]](http://ispl.synology.me:8480/sharing/csGfNlzmu)
 # Network Architecture
-<img src = "/Figures/network1.PNG" width="900">
-<img src = "/Figures/network2.PNG" width="500">
-<img src = "/Figures/network3.PNG" width="300">
+<img src = "/Figures/network1.png" width="900">
+<img src = "/Figures/network2.png" width="500"> <img src = "/Figures/network3.png" width="300">
+
 
 ## Video Comparison
   * Video Comparison: [Youtube Link] (Re-compressed by Youtube)
