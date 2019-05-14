@@ -33,8 +33,11 @@ The process of the pseudo-blind compression artifact removal scheme. The consecu
 <img src = "/Figures/avc.PNG" width="900">
 
 ## Dynamic Compression
-<img src = "/Figures/fig15.PNG" width="700">
-<img src = "/Figures/fig16.PNG" width="700">
+<img src = "/Figures/fig15.PNG" width="800">
+The GT and results of QP estimation where sequences are synthetically generated from ReadySteadyGo.
+<img src = "/Figures/fig16.PNG" width="600">
+The sequence of PSNR before/after applying our IACNN-E, and the actual QP and estimated QP.
+
 ## Related Work
 ### JPEG Artifact Reduction
 #### [AR-CNN] Deep Convolution Networks for Compression Artifacts Reduction <paper-button> <a href="http://mmlab.ie.cuhk.edu.hk/projects/ARCNN.html">Link</a> </paper-button>
