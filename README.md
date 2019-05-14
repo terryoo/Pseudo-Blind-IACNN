@@ -1,6 +1,6 @@
 
 
-# A Pseudo-Blind Convolutional Neural Network for the Removal of Artifacts in Compressed Image and Video (CSVT 2019)
+# A Pseudo-Blind Convolutional Neural Network for the Removal of Artifacts in Compressed Image and Video (IEEE CSVT 2019)
 <img src = "/Figures/real_comp.png" width="430"> <img src = "/Figures/real_processed.png" width="430"> 
 Left: a frame from an input sequence that is captured by a smartphone with AVC and then transcoded to MPEG, Right: the result of processing the frame by our IACNN-E
 
@@ -10,19 +10,10 @@ This paper presents methods based on convolutional neural networks (CNNs) for re
 # Test Code
 The code is implemented with caffe + matlab
 
-Trained model download: [[link]](http://ispl.synology.me:8480/sharing/csGfNlzmu)
+Trained model download: [[link]](http://ispl.synology.me:8480/sharing/xxx)
 # Network Architecture
 <img src = "/Figures/network1.png" width="900">
 The process of the pseudo-blind compression artifact removal scheme. The consecutive frames from the input video are used for the QP estimation, and the network trained with a similar QP is applied to the whole frame. That is, the artifact removal is not performed patch by patch for efficiency.
-
-
-## Video Comparison
-  * Video Comparison: [Youtube Link] (Re-compressed by Youtube)
-  * Video YUV Download: [Link] (900M)
-  * YUV player: [Link] (50M)
-
-
-
 
 # Experimental Results
 ## Standard Compression
