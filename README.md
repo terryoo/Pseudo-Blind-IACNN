@@ -1,9 +1,9 @@
 
 
 # A Pseudo-Blind Convolutional Neural Network for the Removal of Artifacts in Compressed Image and Video (CSVT 2019)
-<img src = "/Figures/caps_ARCNN.bmp" width="430"> <img src = "/Figures/caps_IACNNE.bmp" width="430"> 
+<img src = "/Figures/real_comp.png" width="430"> <img src = "/Figures/real_processed.png" width="430"> 
+Left: a frame from an input sequence that is captured by a smartphone with AVC and then transcoded to MPEG, Right: the result of processing the frame by our IACNN-E
 
-Conventional method (ARCNN) / Proposed
 # Abstract
 This paper presents methods based on convolutional neural networks (CNNs) for removing compression artifacts. We modify the Inception module for the image restoration problem and use it as a building block for constructing blind and non-blind artifact removal networks. It is known that a CNN trained in a non-blind scenario (known compression quality factor) performs better than one trained in a blind scenario (unknown factor), and our network is not an exception. However, the blind system is more practical because the compression quality factor is not always available or does not reflect the actual quality when the image is a transcoded or requantized image. Hence, in this paper, we also propose a pseudo-blind system that estimates the quality factor for a given compressed image and then applies a network that is trained with a similar quality factor. For this purpose, we propose a CNN that estimates the compression quality factor and prepare several non-blind artifact removal networks that are trained for some specific compression quality factors. We train the networks and conduct experiments on widely used compression standards, such as JPEG, MPEG-2, H.264, and HEVC. In addition, we conduct experiments for dynamically changing and transcoded videos to demonstrate the effectiveness of the quality estimation method. The experimental results show that the proposed pseudo-blind network performs better than the blind one for the various cases stated above and requires fewer computations. 
 
@@ -25,18 +25,16 @@ The process of the pseudo-blind compression artifact removal scheme. The consecu
 
 
 # Experimental Results
-**Results of the average PSNR (dB) and SSIM for the testset**
-<img src = "/Tables/PSNR.PNG" width="900">
+## Standard Compression
+### Quantitative Comparison
+<img src = "/Figures/table.PNG" width="900">
 
-
-**JPEG Detail Results
-**MPEG Detail Results
-**AVC Detail Results
-**HEVC Detail Results
-
-## Image Comparison
+### Visual Comparison
 <img src = "/Figures/avc.PNG" width="900">
 
+## Dynamic Compression
+<img src = "/Figures/fig15.PNG" width="700">
+<img src = "/Figures/fig16.PNG" width="700">
 ## Related Work
 ### JPEG Artifact Reduction
 #### [AR-CNN] Deep Convolution Networks for Compression Artifacts Reduction <paper-button> <a href="http://mmlab.ie.cuhk.edu.hk/projects/ARCNN.html">Link</a> </paper-button>
